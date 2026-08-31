@@ -1,0 +1,6 @@
+boto3>=1.34
+eth-account>=0.13
+eth-utils>=4.0
+eth-keys>=0.6
+eth-abi>=5.0
+cryptography>=42.0
