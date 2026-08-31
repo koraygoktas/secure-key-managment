@@ -1,20 +1,28 @@
-# Compiler files
+# Foundry
 cache/
 out/
+broadcast/*/31337/
+broadcast/*/*/dry-run/
 
-# Commonly ignored directories
-.logs/
-.ignore/
-
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
-
-# Docs
-docs/
-
-# Dotenv file
+# Sırlar -- bunları asla commit etme
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+
+# Keystore dosyalarını da commit etme (şifreli olsalar bile) --
+# bunlar ~/.foundry/keystores altında durmalı, repo içinde değil.
+keystores/
+*.keystore.json
+
+# Python (KMS scripti için)
+kms/__pycache__/
+kms/venv/
+kms/.venv/
+*.pyc
+
+# OS / editör
+.DS_Store
+.vscode/
+.idea/
